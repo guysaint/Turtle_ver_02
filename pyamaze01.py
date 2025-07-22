@@ -1,4 +1,5 @@
-from pyamaze import maze
-m = maze()
-m.CreateMaze(loopPercent=100)
+from pyamaze import maze, COLOR, agent
+m = maze(10,10)
+m.CreateMaze(theme=COLOR,white)
+m.CreateMaze(saveMaze=True)
 m.run()
